@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #060270;
+        background-image: 
+          linear-gradient(to top, rgba(6, 2, 112, 1) 20%, rgba(6, 2, 112, 0) 100%), 
+          radial-gradient(circle, #030140 30px, transparent 30px), 
+          radial-gradient(circle, #030140 30px, transparent 30px);
+        background-size: 50px 50px, 100px 100px, 100px 100px;
+        background-position: 0 100%, 0 0, 50px 50px;
+        animation: move-dots 10s infinite linear;
+      }
+
+      @keyframes move-dots {
+        0% {
+          background-position: 0 100%, 0 0, 50px 50px;
+        }
+        100% {
+          background-position: 0 0, 0 0, 50px 50px;
+        }
+      }
+
+      iframe {
+        width: 80vw;
+        height: 80vh;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="https://editor.p5js.org/xiaod701/full/603Iz8NnO"></iframe>
+  </body>
+</html>
